@@ -1,9 +1,9 @@
 [
   {
     "remote":      "github",
-    "repository":  "rashedsahaji/android_vendor_xiaomi_violet",
+    "repository":  "rashedsahaji/RR_vendor_xiaomi_violet",
     "target_path": "vendor/xiaomi/violet",
-    "branch":      "9.0"
+    "branch":      "pie"
   },
   {
     "remote":      "github",
@@ -21,6 +21,12 @@
     "remote":      "github",
     "repository":  "PixelExperience/hardware_qcom_media-caf_sm8150",
     "target_path": "hardware/qcom/media-caf/sm8150",
+    "branch":      "pie-caf"
+  },
+  {
+    "remote":      "github",
+    "repository":  "PixelExperience/hardware_qcom_audio-caf_sm8150",
+    "target_path": "hardware/qcom/audio-caf/sm8150",
     "branch":      "pie-caf"
   },
   {
