@@ -1,42 +1,30 @@
 [
   {
-    "remote":      "github",
     "repository":  "rashedsahaji/RR_vendor_xiaomi_violet",
     "target_path": "vendor/xiaomi/violet",
     "branch":      "pie"
   },
   {
-    "remote":      "github",
     "repository":  "PixelExperience-Devices/kernel_xiaomi_sm6150",
     "target_path": "kernel/xiaomi/sm6150",
     "branch":      "pie"
   },
   { 
-    "remote":      "github",
     "repository":  "PixelExperience/hardware_qcom_display-caf_sm8150",
     "target_path": "hardware/qcom/display-caf/sm8150",
     "branch":      "pie-caf"
   },
   {
-    "remote":      "github",
     "repository":  "PixelExperience/hardware_qcom_media-caf_sm8150",
     "target_path": "hardware/qcom/media-caf/sm8150",
     "branch":      "pie-caf"
   },
   {
-    "remote":      "github",
     "repository":  "PixelExperience/hardware_qcom_audio-caf_sm8150",
     "target_path": "hardware/qcom/audio-caf/sm8150",
     "branch":      "pie-caf"
   },
   {
-    "remote":      "github",
-    "repository":  "LineageOS/android_external_ant-wireless_ant_native",
-    "target_path": "external/ant-wireless/ant_native",
-    "branch":      "lineage-16.0"
-  },
-  {
-    "remote":      "github",
     "repository":  "LineageOS/android_packages_resources_devicesettings",
     "target_path": "packages/resources/devicesettings",
     "branch":      "lineage-16.0"
