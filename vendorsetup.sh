@@ -1,1 +1,1 @@
-add_lunch_combo rr_violet-userdebug
+add_lunch_combo dot_violet-userdebug
