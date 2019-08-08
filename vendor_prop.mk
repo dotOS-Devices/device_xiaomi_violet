@@ -69,6 +69,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.wlan.chip=39xx \
     ro.wlan.mimo=1 \
     ro.opengles.version=196610 \
+    vendor.audio.adm.buffering.ms=2
+
+# Camera
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
+
+# Bluetooth
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.bluetooth.soc=cherokee \
     vendor.qcom.bluetooth.soc=cherokee \
     camera.disable_zsl_mode=1 \
     ro.vendor.at_library=libqti-at.so \
