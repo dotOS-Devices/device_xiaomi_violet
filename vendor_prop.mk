@@ -90,3 +90,79 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.vt_avail_ovr=1 \
     persist.dbg.wfc_avail_ovr=1 \
     ro.oem_unlock_supported=1
+
+# Media
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.mm.enable.qcom_parser=63963135 \
+    media.stagefright.enable-player=true \
+    media.stagefright.enable-http=true \
+    media.stagefright.enable-aac=true \
+    media.stagefright.enable-qcp=true \
+    media.stagefright.enable-fma2dp=true \
+    media.stagefright.enable-scan=true \
+    media.aac_51_output_enabled=true \
+    persist.mm.enable.prefetch=true \
+    mmp.enable.3g2=true \
+    mm.enable.smoothstreaming=true
+
+# Perf
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.extension_library=libqti-perfd-client.so \
+    vendor.iop.enable_uxe=0 \
+    vendor.perf.iop_v3.enable=true \
+    vendor.perf.gestureflingboost.enable=true \
+    vendor.perf.workloadclassifier.enable=true
+
+# CNE and DPM
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.cne.feature=1 \
+    persist.vendor.dpm.feature=1
+
+# Dalvik
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.heapgrowthlimit=256m \
+    dalvik.vm.heapstartsize=8m \
+    dalvik.vm.heapsize=512m \
+    dalvik.vm.heaptargetutilization=0.75 \
+    dalvik.vm.heapminfree=512k \
+    dalvik.vm.heapmaxfree=8m
+
+# Netmgr
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.data.df.dev_name=rmnet_usb0 \
+    persist.vendor.data.iwlan.enable=true \
+    persist.vendor.data.mode=concurrent
+
+# OpenGLES
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.opengles.version=196610
+
+# WFD
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.enable_hwc_vds=1 \
+    persist.debug.wfd.enable=1 \
+    persist.sys.wfd.virtual=0
+
+# Display
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.hw=0 \
+    debug.egl.hw=0 \
+    debug.sf.latch_unsignaled=1 \
+    ro.vendor.display.cabl=0 \
+    ro.vendor.display.svi=1 \
+    ro.vendor.display.sensortype=2 \
+    vendor.gralloc.disable_ubwc=0 \
+    vendor.display.svi.config=1 \
+    vendor.display.disable_scaler=0 \
+    vendor.display.disable_inline_rotator=1 \
+    vendor.display.disable_decimation=1 \
+    vendor.display.enable_null_display=0 \
+    vendor.display.disable_excl_rect=0 \
+    vendor.display.disable_excl_rect_partial_fb=1 \
+    vendor.display.comp_mask=0 \
+    vendor.display.disable_hw_recovery=0 \
+    vendor.display.enable_default_color_mode=1 \
+    vendor.display.disable_hw_recovery_dump=1 \
+    vendor.display.enable_optimize_refresh=1 \
+    vendor.display.svi.config_path=/system/etc/display/SVIConfig.xml \
+    vendor.display.dataspace_saturation_matrix=1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0
