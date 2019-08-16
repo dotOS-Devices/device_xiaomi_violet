@@ -414,9 +414,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
 
-# VNDK-SP
+# Wallpapers
 PRODUCT_PACKAGES += \
-    vndk_package
+    WallpapersBReel2018
 
 # Wifi
 PRODUCT_PACKAGES += \
