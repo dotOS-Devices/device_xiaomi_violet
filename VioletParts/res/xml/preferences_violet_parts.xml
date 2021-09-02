@@ -18,12 +18,14 @@
 
     <PreferenceCategory
         android:key="display"
+        android:layout="@layout/dot_preference_category"
         android:title="@string/display_title">
 
         <Preference
             android:key="device_kcal"
             android:persistent="false"
-            android:icon="@drawable/ic_kcal"
+            app:iconSpaceReserved="false"
+            android:layout="@layout/dot_preference_top_card"
             android:title="@string/device_kcal_title"
             android:summary="@string/kcal_enabled_summary">
             <intent
@@ -33,8 +35,9 @@
         </Preference>
 
         <Preference
-            android:icon="@drawable/ic_thermal_settings"
             android:key="thermal_profiles"
+            app:iconSpaceReserved="false" 
+            android:layout="@layout/dot_preference_middle_card"
             android:summary="@string/thermal_summary"
             android:title="@string/thermal_title">
             <intent
@@ -42,110 +45,71 @@
                 android:targetPackage="org.lineageos.settings"
                 android:targetClass="org.lineageos.settings.thermal.ThermalActivity" />
         </Preference>
-    </PreferenceCategory>
-
-    <PreferenceCategory
-    android:key="selinux"
-    android:title="@string/selinux_category">
-
-    <Preference
-        android:summary="@string/selinux_explanation_summary"
-        android:selectable="false"
-        android:icon="@drawable/ic_warning" />
-
-    <SwitchPreference
-        android:key="selinux_mode"
-        android:title="@string/selinux_mode_title"
-        android:summaryOn="@string/selinux_enforcing_summary"
-        android:summaryOff="@string/selinux_permissive_summary"
-        android:icon="@drawable/ic_linux" />
-
-    <SwitchPreference
-        android:key="selinux_persistence"
-        android:title="@string/selinux_persistence_title"
-        android:summary="@string/selinux_persistence_summary"
-        android:defaultValue="true"
-        android:icon="@drawable/ic_power" />
-    </PreferenceCategory>
-
-    <PreferenceCategory
-    android:key="fps"
-    android:title="@string/fps_info_title">
 
     <SwitchPreference
         android:key="fps_info"
-        android:icon="@drawable/ic_fps_info"
+        app:iconSpaceReserved="false" 
+        android:layout="@layout/dot_preference_bottom_card"
         android:title="@string/fps_info_title"
         android:summary="@string/fps_info_summary"
         android:persistent="true" />
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="usb_fastcharge"
-        android:title="@string/usb_fastcharge_title" >
-    <com.xiaomi.parts.preferences.SecureSettingSwitchPreference
-            android:key="fastcharge"
-            android:defaultValue="true"
-            android:title="@string/fastcharge_title"
-            android:icon="@drawable/ic_usb_fastcharge"
-            android:summary="@string/fastcharge_summary" />
-    </PreferenceCategory>
-
-    <PreferenceCategory
         android:key="audio"
+        app:allowDividerAbove="false"
+        android:layout="@layout/dot_preference_category"
         android:title="@string/audio_title">
 
         <Preference
-            android:icon="@drawable/ic_dirac"
+            app:iconSpaceReserved="false"
+            android:layout="@layout/dot_preference_full_alone_card"
             android:key="dirac_headset_pref"
             android:summary="@string/dirac_summary"
-            android:title="@string/dirac_title">
+            android:title="@string/dirac_title"
+            app:allowDividerBelow="false">
             <intent
                 android:action="android.intent.action.MAIN"
                 android:targetPackage="org.lineageos.settings"
                 android:targetClass="org.lineageos.settings.dirac.DiracActivity" />
         </Preference>
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="speaker"
-        android:title="@string/speaker_category">
-
-        <Preference
-            android:key="clear_speaker_settings" 
-            android:title="@string/clear_speaker_title"
-            android:icon="@drawable/ic_speaker_cleaner_icon" >
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetClass="com.xiaomi.parts.speaker.ClearSpeakerActivity"
-                android:targetPackage="com.xiaomi.parts.speaker" />
-        </Preference>
       </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="vibration"
-        android:title="@string/vibration_title">
+        android:key="usb_fastcharge"
+        android:layout="@layout/dot_preference_category"
+        android:title="@string/usb_fastcharge_title" >
 
-        <com.xiaomi.parts.preferences.VibratorStrengthPreference
-            android:defaultValue="80"
-            android:key="vibration_strength"
-            android:icon="@drawable/ic_vibrate"
-            android:max="100"
-            android:title="@string/vibration_strength_title"
-            app:min="1"
-            app:units="%" />
+    <com.xiaomi.parts.preferences.SecureSettingSwitchPreference
+            android:key="fastcharge"
+            android:defaultValue="true"
+            android:title="@string/fastcharge_title"
+            app:iconSpaceReserved="false"
+            app:allowDividerBelow="false"
+            android:layout="@layout/dot_preference_full_alone_card"
+            android:summary="@string/fastcharge_summary" />
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="torch"
-        android:title="@string/torch_title">
+        android:key="vibration"
+        android:layout="@layout/dot_preference_category"
+        android:title="@string/misc_title">
+
+        <com.xiaomi.parts.preferences.VibratorStrengthPreference 
+            android:defaultValue="80" 
+            android:key="vibration_strength" 
+            app:iconSpaceReserved="false"
+            android:max="100" 
+            android:title="@string/vibration_strength_title" 
+            app:min="1"
+            app:units="%" />
 
         <com.xiaomi.parts.preferences.CustomSeekBarPreference
             android:defaultValue="150"
             android:key="torch_brightness"
             android:max="255"
             app:min="1"
-            android:icon="@drawable/ic_torch"
+            app:iconSpaceReserved="false"
             android:title="@string/torch_brightness_title" />
 
     </PreferenceCategory>
