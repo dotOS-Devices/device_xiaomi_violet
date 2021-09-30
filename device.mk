@@ -74,10 +74,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.aware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.aware.xml \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml
 
-# AID/fs configs
-PRODUCT_PACKAGES += \
-    fs_config_files
-
 # ATRACE_HAL
 PRODUCT_PACKAGES += \
     android.hardware.atrace@1.0-service
@@ -153,12 +149,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-sp/libc++.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++.so
 
-# CNE
-PRODUCT_PACKAGES += \
-    cneapiclient \
-    com.quicinc.cne \
-    services-ext
-
 # Config Store
 PRODUCT_PACKAGES += \
     disable_configstore
@@ -176,7 +166,7 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     gralloc.sm6150 \
     hwcomposer.sm6150 \
-    libdisplayconfig \
+    libdisplayconfig.qti \
     libtinyxml \
     libvulkan \
     memtrack.sm6150 \
@@ -445,10 +435,8 @@ PRODUCT_COPY_FILES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     libavservices_minijail_32 \
-    libdisplayconfig.qti \
     vendor.display.config@2.0 \
-    libdisplayconfig.vendor \
+    libdisplayconfig.qti.vendor \
     libnl \
     libqdMetaData \
-    libqdMetaData.system \
     libqdMetaData.vendor
