@@ -19,17 +19,17 @@ vendor/lib/libacdb-fts.so|3757a6e47bc8070178a3cb1ac3aa724e70a9f33f
 vendor/lib/libacdbloader.so|47145f035a294cfa83acd5ef3f3e443c556fc300
 vendor/lib/libacdbrtac.so|a618bad18309032d19ab5d5e992043d05a7fbb8c
 
-# ADSP - from davinci-user 11 RKQ1.200826.002 21.6.11 release-keys
-vendor/bin/adsprpcd|c1b9fe936ffbcd5a875baa785f4b9629366083ec
-vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc|96b08f4e97ef20e20a8d7f89212a5549abe66666
-vendor/lib/libadsp_default_listener.so|92ca2faf693eb488394440b94b6deb73fe9504e2
-vendor/lib/libadsprpc.so|437f6ab24e5a08de250529bf0adf5ecaed88817d
-vendor/lib/libmdsprpc.so|f9cabbd95f91e9fa90e21c48349adbdd825a05ff
-vendor/lib/libsdsprpc.so|091682459f41566a3909da301a06be2008efb493
-vendor/lib64/libadsp_default_listener.so|84ffb0536efd42fb0ebc67c194f88da3da6ca9de
-vendor/lib64/libadsprpc.so|5e677d9e7ecc56d8c9bf7bcc49f1e717b5669aad
-vendor/lib64/libmdsprpc.so|523f6501e39101a9d61baffccd20a0d2848e3524
-vendor/lib64/libsdsprpc.so|96ed968d5d79c3fe8c37f331082c16cf5212dc52
+# ADSP - from LA.UM.9.1.r1-09200-SMxxx0.0
+vendor/bin/adsprpcd|c8a45eb83a6d70dcbcc1b8ec574391b49e8ca8b9
+vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc|77f5aaf6d773ee545e39bc5fdc99c65434c05379
+vendor/lib/libadsp_default_listener.so|aebe95ff3eeb279a642770db5f1383e5aefc4d2f
+vendor/lib/libadsprpc.so|65fdbcc30e440a817261b7811b51c4500e3ecbff
+vendor/lib/libmdsprpc.so|8f6922978529c413bd63ca1eb233c59de7bf471d
+vendor/lib/libsdsprpc.so|bbf71d4dabc4f1ddcbcb34c105886c8099095032
+vendor/lib64/libadsp_default_listener.so|aa3b51b544032a250ab02687c0200152f80a23dd
+vendor/lib64/libadsprpc.so|c8e50f443e882d757961313adac1af1c1f9ecc5b
+vendor/lib64/libmdsprpc.so|1caa9e12fabffc849ed76782379c05dcd12ea870
+vendor/lib64/libsdsprpc.so|36bde4ad40d0214455ec484c2f84fa3811881180
 
 # ADSP Modules - from LA.UM.9.1.r1-09200-SMxxx0.0
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so|59cbdf5d84ba2ff64014941f3ad9e6c2c35e2c06
@@ -323,10 +323,10 @@ vendor/firmware/CAMERA_ICP.elf
 # CDSP - from davinci-user 11 RKQ1.200826.002 21.6.11 release-keys
 vendor/bin/cdsprpcd|63f7be350d30b9d4181ded5b9cba956bff04439c
 vendor/etc/init/vendor.qti.cdsprpc-service.rc|36772b70216796e8ef19376d9c6a81ee9ffff549
-vendor/lib/libcdsp_default_listener.so|7949a156e2fced7a60cb4099cc4ab274c3504d7e
-vendor/lib/libcdsprpc.so|de676387b859280b4fe8004e999419a6bc8ddeab
-vendor/lib64/libcdsp_default_listener.so|74d24246b94fe48212f93e0693000489792dfb43
-vendor/lib64/libcdsprpc.so|5723a2985d7c85197952df08da1fc6e90d1d2b5d
+vendor/lib/libcdsp_default_listener.so|49dbdd4c8c73a21619569f3723a71b3467e73e75
+vendor/lib/libcdsprpc.so|caae66e156f79727c28eae1be251173b900cc08f
+vendor/lib64/libcdsp_default_listener.so|10907139f8fe737cbffba80947082d83e1c019d8
+vendor/lib64/libcdsprpc.so|b69f64e41364250a59ee55b55da2ba24824761fd
 
 # Charger - from davinci-user 11 RKQ1.200826.002 21.6.11 release-keys
 vendor/bin/hvdcp_opti|c29dc9035322d0734a616b55c5e35c4bcea2c3d5
@@ -491,7 +491,7 @@ vendor/lib/libwvhidl.so|dd599b1055d1faf025d60bc4f702f9ae11123c30
 vendor/bin/dspservice|c7809e32581d5c6efac65a3a7689f43526c17bb8
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|8119845f8e6a24e53bdf286e19f34e9906d64e78
-vendor/lib64/vendor.qti.hardware.dsp@1.0.so|5f30d9c5fff738e6194a36a5b93372fa32ec0471
+vendor/lib64/vendor.qti.hardware.dsp@1.0.so|45244ba636fb2ea6ad7ade9217e109fd2814442c
 
 # Fingerprint
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
