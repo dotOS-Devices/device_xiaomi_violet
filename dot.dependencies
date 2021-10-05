@@ -14,7 +14,7 @@
   {
     "repository": "SuperiorOS-Devices/kernel_xiaomi_violet",
     "target_path": "kernel/xiaomi/violet",
-    "branch": "LA.UM.9.1.r1-11100-SMxxx0.0",
+    "branch": "LA.UM.9.1.r1-11200-SMxxx0.0",
     "remote": "github"
   },
   {
