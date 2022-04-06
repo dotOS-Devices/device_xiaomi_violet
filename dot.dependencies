@@ -17,6 +17,12 @@
     "remote": "github"
   },
   {
+    "repository": "Joker-V2/vendor_xiaomi-firmware_violet",
+    "target_path": "vendor/xiaomi-firmware/violet",
+    "branch": "dot12",
+    "remote": "gitlab"
+  },
+  {
     "repository": "kdrag0n/proton-clang",
     "target_path": "prebuilts/clang/host/linux-x86/clang-proton",
     "branch": "master",
