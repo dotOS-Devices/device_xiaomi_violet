@@ -23,6 +23,12 @@
     "remote": "gitlab"
   },
   {
+    "repository": "vendor_ANXCamera",
+    "target_path": "vendor/ANXCamera",
+    "branch": "dot12",
+    "remote": "dotos-devices-gitlab"
+  },
+  {
     "repository": "kdrag0n/proton-clang",
     "target_path": "prebuilts/clang/host/linux-x86/clang-proton",
     "branch": "master",
