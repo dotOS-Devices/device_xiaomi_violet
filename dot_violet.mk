@@ -20,6 +20,9 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # Charging Animation
 TARGET_INCLUDE_PIXEL_CHARGER := true
 
+# dotOS Official
+DOT_OFFICIAL := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := dot_violet
 PRODUCT_DEVICE := violet
