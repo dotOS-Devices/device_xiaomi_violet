@@ -14,6 +14,9 @@ $(call inherit-product, vendor/dot/config/common.mk)
 # Inherit ANX Camera
 $(call inherit-product, vendor/ANXCamera/config.mk)
 
+# Blur
+TARGET_SUPPORTS_BLUR := true
+
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
